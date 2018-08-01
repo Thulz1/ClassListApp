@@ -1,0 +1,19 @@
+page-home {
+
+ .center{
+     background-image: url('../../assets/imgs/calm.jpg');
+     background-size: cover;
+     text-align: center;
+     justify-content: center;
+     align-content: center;
+    
+ }
+ .img{
+    width: 200px;
+    height: 150px;
+    margin-top: 40%;
+ }
+ .img:hover{
+     background-color: grey;
+ }
+}

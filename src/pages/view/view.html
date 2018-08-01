@@ -1,0 +1,37 @@
+<ion-header>
+
+  <ion-navbar color="color2">
+    <ion-title>view</ion-title>
+  </ion-navbar>
+  <ion-fab top right>
+    <button ion-fab mini  color="color" class="btn" (click)="number()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+</ion-header>
+
+
+<ion-content padding class="back">
+    
+    <div>
+
+<ion-card>
+
+  <ion-card-header>Class Mate List</ion-card-header>
+ 
+  <ion-card-content> 
+  <ion-list *ngFor="let a of arr; let b = index">
+    <ion-item (click)="block(b)">     
+     
+      <h1>{{a.name}} {{a.surname}}</h1> 
+                         
+     <button ion-button  item-right clear (click)="update(b)"><b>more</b></button>
+    
+    </ion-item>
+  </ion-list>
+ </ion-card-content> 
+
+</ion-card>
+
+ 
+
+      </div>
+</ion-content>

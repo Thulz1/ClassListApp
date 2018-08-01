@@ -1,0 +1,45 @@
+<ion-header>
+
+    <ion-navbar color="color2">
+      <ion-title>Details</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+ 
+<ion-content padding class="con">
+
+    <ion-list class="list">
+
+        <ion-item>
+          <ion-label>Name:</ion-label>
+          <ion-input type="text" #name></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>Surname:</ion-label>
+          <ion-input type="text" #surname></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>ID:</ion-label>
+          <ion-input type="text" #id></ion-input>
+         </ion-item>
+        
+         <ion-item>
+           <ion-label>Gender:</ion-label>
+           <ion-input type="text" #gender></ion-input>
+          </ion-item>
+          <ion-item>
+           <ion-label>Email:</ion-label>
+           <ion-input type="text" #email></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Adress:</ion-label>
+            <ion-input type="text" #address></ion-input>
+          </ion-item>
+      
+      </ion-list>
+      
+      <button ion-button full color="color1" round (click)="addUser(name.value,surname.value,id.value,gender.value,email.value,address.value)">Submit</button>
+</ion-content>
